@@ -1,0 +1,15 @@
+{
+  "name": "nodejstutorial",
+  "version": "1.1.0",
+  "description": "Estrazione campi da buste paga PDF e creazione file Excel compatibile",
+  "main": "src/extractPayslips.js",
+  "type": "commonjs",
+  "bin": {
+    "estrai-buste": "bin/estrai-buste"
+  },
+  "scripts": {
+    "start": "node src/extractPayslips.js",
+    "gui": "node src/guiServer.js",
+    "test": "node --test"
+  }
+}
