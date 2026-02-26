@@ -4,7 +4,7 @@ const path = require('node:path');
 const { spawn } = require('node:child_process');
 const { runExtraction } = require('./extractPayslips');
 
-const HOST = '0.0.0.0';
+const HOST = '127.0.0.1';
 const PORT = 3210;
 const PAGE_PATH = path.join(__dirname, '..', 'public', 'index.html');
 

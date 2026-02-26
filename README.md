@@ -15,26 +15,33 @@ Programma Node.js per leggere uno o più file PDF di busta paga e creare un file
 
 > Nota: se il PDF è una scansione immagine pura, prima serve OCR (ad esempio con Tesseract), altrimenti il testo non è estraibile.
 
-## Avvio rapido (interfaccia grafica)
+## Modalità locale consigliata (senza server web)
 
-Hai due opzioni:
+Questa modalità gira tutta in locale da terminale:
 
-1. Script eseguibile già pronto:
+```bash
+./bin/estrai-buste-locale
+```
+
+Oppure:
+
+```bash
+npm run local
+```
+
+Ti chiede interattivamente:
+
+- percorso input (file PDF singolo o cartella)
+- percorso output `.xls`
+
+## Modalità GUI web locale (opzionale)
+
+Se preferisci una pagina grafica nel browser, resta comunque in locale (`127.0.0.1`):
 
 ```bash
 ./bin/estrai-buste
+# oppure npm run gui
 ```
-
-2. Oppure via npm:
-
-```bash
-npm run gui
-```
-
-Si apre una GUI nel browser su `http://127.0.0.1:3210` dove inserire:
-
-- percorso input (singolo PDF o cartella con PDF)
-- percorso output `.xls`
 
 ## Uso da riga di comando (CLI)
 
